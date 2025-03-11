@@ -1,0 +1,33 @@
+<p>Enhance the reporting process by leveraging Burp AI to generate custom reports from issues identified by Burp Scanner. This tool allows users to curate findings, define report specifications, and produce comprehensive, AI-assisted reports tailored to their needs.</p>
+
+<p> By integrating Burp AI, ReportLM enables a high degree of customisation, allowing reports to be adapted to different audiences or requirements. Users can adjust tone, technical depth, and language to suit the reader’s experience level, role, or preferred format. This flexibility makes it easier to generate reports that are clear, relevant, and aligned with specific use cases.</p>
+
+<h2>How it works</h2>
+
+<ol>
+	<li><b>Issue Processing</b> - ReportLM extracts issue details, background, and remediation information from Burp Scanner.</li>
+	<li><b>Customisation Options</b> - Users can specify custom requirements, such as tone, audience, format, or language preferences.</li>
+	<li><b>AI-Powered Generation</b> - The gathered data is sent to Burp AI, which generates the report.
+		<ul>
+			<li>Depending on the generation mode, the report will be returned all at once or section by section.</li>
+		</ul>
+	</li>
+	<li><b>Post-Processing</b> - Once the report is generated:
+		<ul>
+			<li>If generated in sections, the details are combined into a final, complete report.</li>
+			<li>Evidence (e.g., request/response pairs) is then attached if enabled.</li>
+		</ul>
+	</li>
+	<li><b>Transparency & Logging</b> - All data sent to Burp AI can be traced using the logging settings for visibility and peace of mind.</li>
+</ol>
+
+<h2>Usage</h2>
+
+<p><strong>Note:</strong> Ensure AI functionality is enabled for this extension in your <b>Extensions &gt; Installed</b> tab.
+
+<ol>
+	<li><b>Add issues</b> - Right-click on any issue and select "Add to ReportLM".</li>
+	<li><b>Review & edit</b> - Check the report table and remove any unwanted issues.</li>
+	<li><b>Customize</b> - Enter any specific details required for the report.</li>
+	<li><b>Generate</b> - Click the "Generate" button, and let Burp AI create a detailed report for you.</li>
+</ol>

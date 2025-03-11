@@ -1,0 +1,13 @@
+Uuid: c29264074acc4aacb5b424e6a033ba5d
+ExtensionType: 1
+Name: ReportLM
+RepoName: report-lm
+ScreenVersion: 0.1.0
+SerialVersion: 1
+MinPlatformVersion: 19
+ProOnly: True
+Author: Tom SL, PortSwigger
+ShortDescription: Use BurpAI to generate custom reports from Burp's issues.
+EntryPoint: build/libs/report-lm-1.0.0.jar
+BuildCommand: ./gradlew jar
+SupportedProducts: Pro
