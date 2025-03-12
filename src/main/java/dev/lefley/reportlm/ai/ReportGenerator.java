@@ -27,7 +27,9 @@ public class ReportGenerator
         this.scanner = scanner;
         this.configModel = configModel;
 
-        AtomicBoolean aiEnabled = new AtomicBoolean(false);
+        AtomicBoolean aiEnabled = new AtomicBoolean(ai.isEnabled());
+        Events.publish(new AiToggledEvent(ai.isEnabled()));
+
         Threads.scheduleAtFixedRate(
                 () -> {
                     boolean enabled = ai.isEnabled();
